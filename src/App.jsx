@@ -11,6 +11,7 @@ import ProductPage from './pages/ProductPage';
 import AddressPage from './pages/AddressPage';
 import CheckOutPage from './pages/CheckOutPage';
 import ShareableCartPage from './pages/ShareableCartPage';
+import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 import PropTypes from 'prop-types';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   const [selectedAddress, setSelectedAddress] = useState({});
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/app">
       <Routing 
         showPayment={showPayment}
         setShowPayment={setShowPayment}
@@ -94,6 +95,7 @@ function Routing({
           handleSelectAddress={handleSelectAddress}
           handleBack={handleBack}/>} />
         <Route path="/shareable/:cartId" element={<ShareableCartPage/>}/>
+        <Route path="*" element={<NotFoundPage />} />
         </Routes>
     </div>
   )
