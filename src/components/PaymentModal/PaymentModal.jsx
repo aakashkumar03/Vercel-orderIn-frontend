@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
 import styles from './PaymentModal.module.css';
 import apiCall from '../../utils/API';
+import { useNavigate } from 'react-router-dom';
 
 function PaymentModal({ isOpen, onClose, cardData, onSave, onRemove ,setIsModalOpen}) {
 
   if (!isOpen) return null;
+  const navigate = useNavigate()
 
   const handleCardSubmit = async(e) => {
     e.preventDefault();

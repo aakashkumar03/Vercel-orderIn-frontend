@@ -1,4 +1,4 @@
-import  arrowRight from './ArrowRight.svg';
+import arrowRight from './arrowRight.svg';
 import SvgPlus from './plus.svg';
 import SvgLocation from './location.svg';
 import SvgWallet from './wallet.svg';
