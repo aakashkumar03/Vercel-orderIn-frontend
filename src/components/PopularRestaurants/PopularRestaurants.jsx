@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { RestaurantCard } from '../micro-components';
-import styles from './PopularRestaurants.module.css';
+import styles from './Popularrestaurants.module.css';
 
 export default function PopularRestaurants() {
   const restaurants = [
