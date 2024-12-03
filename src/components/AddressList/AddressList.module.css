@@ -1,0 +1,139 @@
+.container {
+  padding: 1rem 1.5rem;
+  max-width: 88%;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.addressGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.addressCard {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 265px;
+  height: 210px;
+  position: relative;
+}
+
+.addressCard:hover {
+  border-color: #ff5722;
+  transform: translateY(-2px);
+}
+
+.addressCard.selected {
+  border-color: #ff5722;
+  background: #fff5f2;
+}
+
+.addressHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.addressName {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+      justify-content: space-between;
+      width: 100%;
+}
+
+.addressActions {
+  display: flex;
+  gap: 0.5rem;
+ align-items: flex-end;
+ position: absolute;
+ bottom: 10px;
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  color: #ff5722;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.divider {
+  color:#AFAFAF;
+  height: 15px;
+}
+
+.addressDetails {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.addCard {
+  background: white;
+  border: 2px dashed #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 265px;
+  height: 210px;
+}
+
+.addCard:hover {
+  border-color: #ff5722;
+  color: #ff5722;
+}
+
+.addIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.addText {
+  font-size: 0.9rem;
+  color: inherit;
+  text-align: center;
+}
+
+
+.defaultTag {
+  font-size: 0.7rem;
+  background: #fff3e0;
+  color: #ff5722;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+  display: flex;
+}

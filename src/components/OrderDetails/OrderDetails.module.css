@@ -1,0 +1,173 @@
+.container {
+  padding: 1rem 1.5rem;
+  max-width: 88%;
+  margin: 50px auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.title svg {
+  color: #666;
+}
+
+.orderGrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
+}
+
+.orderItems {
+  background: white;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  border: 1px solid #03081F;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #03081F;
+}
+
+.item:last-child {
+  border-bottom: none !important;
+}
+
+.itemImage {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.itemDetails {
+  flex: 1;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemDetails h3 {
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.itemPrice {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #22c55e;
+}
+
+.itemQuantity{
+  font-weight: 400;
+  color: #83858A;
+  font-size: 0.75rem;
+}
+
+
+.summary {
+  background: transparent;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  
+}
+.divider{
+  border-bottom: 1px solid #03081F;
+  margin: 1rem 0;
+}
+
+.summary h2 {
+  font-size: 1rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #83858A;
+}
+
+.subtotalAmount{
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+
+.summaryRow:last-of-type {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.checkoutButton {
+  width: 100%;
+  padding: 0.75rem;
+  background: #FC8A06;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 100px;
+}
+
+
+.notesContainer{
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.notesTitle{
+  font-weight: 400;
+  color: #83858A;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+hr{
+  color: #03081F;
+}
+
+.notes {
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+}
+
+.notes textarea {
+  resize: none;
+  min-height: 30px;
+  font-size: 0.9rem;
+  width: 97%;
+    border: 1px solid 03081F;
+    padding: 12px;
+    border-radius: 100px;
+    background: white;
+    color: 03081F;
+    min-height: 25px;  
+    height: 25px;    
+}
