@@ -8,3 +8,10 @@
 .cart{
     margin: 2%;
 }
+
+@media (max-width: 600px) {
+    .orderContainer{
+        flex-direction: column;
+    }
+    
+}

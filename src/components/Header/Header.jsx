@@ -56,7 +56,7 @@ export default function Header({setShowCart ,totalCartItems}) {
 
       {isMenuOpen && (
         <div className={styles.mobileMenu}>
-          <a href="#">Home</a>
+          <Link to='/home'>Home</Link>
           <a href="#">Browse Menu</a>
           <a href="#">Special Offers</a>
           <a href="#">Restaurants</a>

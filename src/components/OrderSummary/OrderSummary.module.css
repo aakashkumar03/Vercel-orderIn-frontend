@@ -224,10 +224,11 @@
 
   @media (max-width: 500px) {
     .container{
-      margin-left: 20%;
+      margin-left: 15%;
     }
 
     .share{
-      margin-left: 20%;
+      margin-left: 15%;
     }
+
   }

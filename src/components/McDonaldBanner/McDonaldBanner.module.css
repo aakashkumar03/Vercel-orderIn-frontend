@@ -175,17 +175,24 @@
   .banner {
     display: flex;
     flex-direction: column-reverse;
-    /* justify-content: space-around;
-    align-items: center;
-    background-color: #1a1a1a;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    height: 40vh;
-    position: relative; */
+    
   }
   .orderInfo{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
+  .leftSection h3{
+    margin-top: 10px;
+  }
+
+  .banner{
+    height: 50vh;
+  }
+
+  .navbar ul{
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+  }
 }
