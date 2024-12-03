@@ -5,11 +5,13 @@ import { useState } from 'react';
 import { AddressModal } from '../AddressModal/AddressModal';
 import { SvgPlus } from '../../assets';
 import apiCall from '../../utils/API';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function AddressList({ addresses, selectedAddress, onSelectAddress, onBack,setAddressDetails }) {
   const [showModal, setShowModal] = useState(false);
   const [addressToEdit, setAddressToEdit] = useState(null);
+  const navigate= useNavigate
 
   const handleSaveAddress = async (newAddress) => {
     if (addressToEdit) {

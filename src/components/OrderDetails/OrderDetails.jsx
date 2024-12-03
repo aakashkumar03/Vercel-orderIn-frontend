@@ -26,7 +26,7 @@ const handleProceedToPayment = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title} onClick={()=>navigate(-1)}>
+      <h1 className={styles.title} onClick={()=>navigate('/product')}>
         <ArrowLeft size={20} />
         Your Order Details
       </h1>
