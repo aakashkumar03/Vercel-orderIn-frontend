@@ -71,10 +71,6 @@ function Routing({
     navigate('/address');
   };
 
-  // if(showPayment){
-  //  return <PaymentMethod total={total} onBack={handleBack} />
-  // }
-
   return (
     <div className="app">
       <Routes>

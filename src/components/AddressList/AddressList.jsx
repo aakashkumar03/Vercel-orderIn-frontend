@@ -27,26 +27,25 @@ export default function AddressList({ addresses, selectedAddress, onSelectAddres
       "POST",
       {Authorization:localStorage.getItem('token')},
       newAddress)
-      if(response==0){
+      if(response===0){
         navigate('/login')
       }
-      window.location.reload()
+      // window.location.reload()
       setAddressToEdit(null);
     } else {
       // Add new address
-      console.log("elseeeeee",newAddress);
       
       const address = {
         ...newAddress,
         id: Math.random().toString(36).substring(2, 9),
-        name: addresses[0].name
+        name: JSON.stringify(localStorage.getItem("userName"))
       };
       const response = await apiCall(
         import.meta.env.VITE_BACKEND_BASE_URL+'/api/address/create',
         "POST",
         {Authorization:localStorage.getItem('token')},
         newAddress)
-        if(response==0){
+        if(response===0){
           navigate('/login')
         }
       window.location.reload()
@@ -64,7 +63,7 @@ export default function AddressList({ addresses, selectedAddress, onSelectAddres
       "POST",
       {Authorization:localStorage.getItem('token')},
       {id:addressId})
-    if(response==0){
+    if(response===0){
       navigate('/login')
     }
     window.location.reload()

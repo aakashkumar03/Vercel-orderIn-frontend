@@ -1,6 +1,5 @@
 const apiCall = async ( url, method = "GET", headers = {}, body = {}, params = {} ) => {
   try {
-    console.log("header API==",headers);
     
     // Build query string for GET requests if `params` are provided
     const queryString = new URLSearchParams(params).toString();

@@ -16,7 +16,7 @@ const ProductPage = () => {
       "GET",
       {Authorization:localStorage.getItem('token')},
     )
-    if(response==0){
+    if(response===0){
       navigate('/login')
     }
     setProductDetails(response)

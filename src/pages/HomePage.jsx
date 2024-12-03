@@ -13,7 +13,7 @@ const HomePage = () => {
           import.meta.env.VITE_BACKEND_BASE_URL+'/api/user/userProfile',
           "GET",
           {Authorization:localStorage.getItem('token')})
-        if(response==0){
+        if(response===0){
           navigate('/login')
         }
         {localStorage.setItem('userName',response.name)}

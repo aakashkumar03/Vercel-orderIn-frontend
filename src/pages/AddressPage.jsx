@@ -15,7 +15,7 @@ const AddressPage = ({addresses,selectedAddress,handleSelectAddress,handleBack})
       import.meta.env.VITE_BACKEND_BASE_URL+'/api/address/allAddress',
       "GET",
       {Authorization:localStorage.getItem('token')})
-      if(response==0){
+      if(response===0){
         navigate('/login')
       }
     setAddressDetails(response)

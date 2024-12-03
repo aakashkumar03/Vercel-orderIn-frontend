@@ -8,14 +8,13 @@ const ProfilePage = () => {
   const [profileDetails,setProfileDetails] = useState({})
   const [isLoading,setIsLoading] = useState(true)
   const navigate = useNavigate()
-  console.log("localStorage.getItem('token')",localStorage.getItem('token'));
   
   const getProfileDetails = async ()=>{
     const response = await apiCall(
       import.meta.env.VITE_BACKEND_BASE_URL+'/api/all/profilePage',
       "GET",
       {Authorization:localStorage.getItem('token')})
-    if(response==0){
+    if(response===0){
       navigate('/login')
     }
     setProfileDetails(response)

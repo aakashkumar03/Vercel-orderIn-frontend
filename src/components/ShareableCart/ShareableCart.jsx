@@ -42,7 +42,6 @@ const navigate = useNavigate();
         totalAmount:cartTotal
       }
     );
-    console.log("----",response);
     //Todo redirect to checkout page
     const items=cartItems
     const total=cartTotal

@@ -32,7 +32,7 @@ export default function PaymentMethod({ total, onBack }) {
       {Authorization:localStorage.getItem('token')},
       payLoad)
     
-    if(response==0){
+    if(response===0){
       navigate('/login')
     }
     if(response.orderId)setShowSuccess(true)

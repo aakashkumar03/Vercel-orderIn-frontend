@@ -24,7 +24,7 @@ function PaymentModal({ isOpen, onClose, cardData, onSave, onRemove ,setIsModalO
       {Authorization:localStorage.getItem('token')},
       updatedCard)
       
-      if(response==0){
+      if(response===0){
         navigate('/login')
       }
       window.location.reload()

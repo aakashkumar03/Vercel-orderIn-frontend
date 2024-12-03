@@ -30,9 +30,8 @@ const Profile=({profileData={}})=> {
           gender:userData.gender,
           country:userData.country
         })
-      console.log("response handle change",response);
       
-      if(response==0){
+      if(response===0){
         navigate('/login')
       }
     }
@@ -83,7 +82,7 @@ const Profile=({profileData={}})=> {
         cardId:selectedCard.cardId
       })
     
-    if(response==0){
+    if(response===0){
       navigate('/login')
     }
 

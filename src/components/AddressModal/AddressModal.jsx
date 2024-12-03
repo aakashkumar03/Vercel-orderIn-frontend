@@ -23,7 +23,6 @@ export function AddressModal({ isOpen, onClose, onSave,addressToEdit }) {
 
 
   useEffect(() => {
-    console.log('addressToEdit', addressToEdit);
     if (addressToEdit) {
       // Parse the address string to get individual fields
       // const [address, cityState, pinCode] = addressToEdit.address.split(', ');
@@ -36,7 +35,8 @@ export function AddressModal({ isOpen, onClose, onSave,addressToEdit }) {
         phone: addressToEdit.phone,
         fullAddress: addressToEdit?.fullAddress,
         addressId:addressToEdit.addressId,
-        isDefault: addressToEdit?.isDefault || false
+        isDefault: addressToEdit?.isDefault || false,
+        name:JSON.stringify(localStorage.getItem("userName"))
       });
     }
   }, [addressToEdit]);
@@ -47,7 +47,6 @@ export function AddressModal({ isOpen, onClose, onSave,addressToEdit }) {
     e.preventDefault();
     onSave(formData);
 
-    console.log('formData', formData);
     onClose();
   };
 
