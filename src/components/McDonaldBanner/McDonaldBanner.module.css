@@ -85,7 +85,9 @@
 }
 
 .imageContainer img {
-  width: 500px;
+  max-width: 500px;
+  min-width: 100px;
+  width: 80%;
   height: auto;
   border-radius: 8px;
 }
@@ -181,6 +183,9 @@
     border-radius: 10px;
     height: 40vh;
     position: relative; */
+  }
+  .orderInfo{
+    flex-direction: column;
   }
   
 }

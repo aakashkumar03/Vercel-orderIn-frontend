@@ -60,7 +60,7 @@ const ProductPage = () => {
         <McDonaldBanner/>
         <div className={styles.orderContainer}>
           <div className={styles.order}>
-            <Deals/>
+            <Deals showBtn = {true}/>
             <Catagories data={productDetails?.result?.burgerProductList} handleAddToCart={handleAddToCart}/>
             <Catagories data={productDetails?.result?.friesProductList} handleAddToCart={handleAddToCart}/>
             <Catagories data={productDetails?.result?.coldDrinkProductList} handleAddToCart={handleAddToCart}/>

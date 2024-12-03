@@ -1,48 +1,65 @@
 .itemContainer {
-    margin: 4%;
+  margin: 4%;
     width: auto;
-  }
-  
-  .itemContainer h2 {
-    color: #fc8a06;
-    margin: 1%;
-  }
-  
-  .itemFlex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  
-  .itemCard {
-    display: flex;
-    width: 25%;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 30px;
-    margin: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .itemCard img {
-    max-width: 120px;
-    margin-bottom: 10px;
-  }
-  
-  .addButton {
-    background-color: #f00;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .price {
-    font-weight: 600;
-  }
-  
-  .itemContent {
-    font-size: 80%;
-    padding: 1%;
-  }
+}
+
+.itemContainer h2 {
+  color: #fc8a06;
+  margin: 1%;
+}
+
+.itemFlex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.itemDesc{
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.itemImage {
+  width: 35%;
+
+}
+
+.itemImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.itemCard {
+  position: relative;
+  display: flex;
+  width: 27%;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  min-width: 350px;
+}
+
+.itemCard img {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+.addButton {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.itemContent {
+  font-size: 80%;
+  padding: 1%;
+}

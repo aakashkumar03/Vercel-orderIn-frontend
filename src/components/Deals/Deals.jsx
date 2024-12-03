@@ -22,7 +22,7 @@ const DEALS_DATA = {
   ]
 };
 
-export default function Deals() {
+export default function Deals({showBtn = false}) {
   const [selectedCategory, setSelectedCategory] = useState('Pizza & Fast food');
   const categories = Object.keys(DEALS_DATA);
 
@@ -48,6 +48,7 @@ export default function Deals() {
           {DEALS_DATA[selectedCategory].map(deal => (
             <OverviewCard
               key={deal.id}
+              showBtn={showBtn}
               {...deal}
             />
           ))}

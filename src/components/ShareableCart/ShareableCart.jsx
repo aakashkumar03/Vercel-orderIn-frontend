@@ -44,6 +44,16 @@ const navigate = useNavigate();
     );
     console.log("----",response);
     //Todo redirect to checkout page
+    const items=cartItems
+    const total=cartTotal
+    navigate('/checkout', {
+      state: {
+        items,
+        discounts, 
+        deliveryFee,
+        total 
+      }
+    });
     
   };
     

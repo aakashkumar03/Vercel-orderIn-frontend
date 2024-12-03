@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Catagories.module.css';
+import { PlusBtn } from '../micro-components';
 
 const Catagories=({data,handleAddToCart})=> {
   
@@ -12,15 +13,12 @@ const Catagories=({data,handleAddToCart})=> {
             <div className={styles.itemDesc}>
               <h4>{item.name}</h4>
               <p className={styles.itemContent}>{item.desc}</p>
-              <p className={styles.price}>{item.price}</p>
+              <p className={styles.price}>₹ {item.price}</p>
             </div>
             <div className={styles.itemImage}>
               <img src={item.productImage} alt={item.name} />
-              <div className={styles.btnShadow}>
-                <button className={styles.addButton} 
-                onClick={()=>handleAddToCart(item)}>+</button>
-              </div>
             </div>
+            <PlusBtn onClick={()=>handleAddToCart(item)} />
           </div>
         ))}
       </div>

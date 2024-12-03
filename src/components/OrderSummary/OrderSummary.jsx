@@ -15,6 +15,8 @@ const navigate = useNavigate();
       quantity,
       price
     }));
+    
+
     const response = await apiCall(
       import.meta.env.VITE_BACKEND_BASE_URL+'/api/cart/create',
       "POST",
@@ -24,10 +26,10 @@ const navigate = useNavigate();
         totalAmount:total
       }
     )
-    console.log("response===>>>>share",response.cartId);
-    console.log("ShareableCart api==>",`${import.meta.env.VITE_BACKEND_BASE_URL}+/${response.cartId}`);
-    
-    
+    const copiedText=`${window.location.origin}/app/shareable/${response?.cartId}`
+    console.log("response===>>>>share",copiedText);
+    await navigator.clipboard.writeText(copiedText);
+    alert('Link is copied')
   }
   const handleCheckout = () => {
     navigate('/checkout', {
