@@ -87,9 +87,10 @@
 .imageContainer img {
   max-width: 500px;
   min-width: 100px;
-  width: 80%;
+  width: 70%;
   height: auto;
   border-radius: 8px;
+  border: #f9f9f9 solid 2px;
 }
 
 

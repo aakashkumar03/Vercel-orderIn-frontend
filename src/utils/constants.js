@@ -1,6 +1,6 @@
 const constants={
-    APP_LOGO:"https://s3-alpha-sig.figma.com/img/c323/e614/5fe44fe9aa4ff0011347ab73c5d6358d?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mBYpIecBYg~lYaUuFadqLWd9tUepw0wH5h0vmxAEVffXgooF~BYTLCGg7g92-53xuEy5NwYXjvoUOEs3Vpe10oQz2zel7-xI9E1SrZ-rEL~HeJJP2B4JG1KDDPVBW0fQvKu0WvPhW3spEDQiWnCsyH8dqYinJkxuGA7dDTi6PgvdEBtH-jA4Ah1ulvB0n82D5GUWG-fI7GTcm-nauHlBotR~SDKmbsn8Qg-MxSfq0LIQO25K2JRgKmlkpc5gkgwkepJRUqeTC5ZRm~2gpqyYwWMbUYODQS-ZPs1xAJLOIlV6MN5B6cCOZJTJb-cFT9xohkme09OIi3hYUZC1H2wIbQ__",
-    WELCOME_IMAGE:"https://s3-alpha-sig.figma.com/img/be11/353a/02f4b1476ff7565a60acdccf6f4f0dce?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pYZ6Yn-7LXY7wG62juxaqdh4PDU0XZdarw3m9Cqbsd02bU1dxSCzmSsh-teq9zQuxtXXUGn~FbDNdI4bCoCpOmAOh9p83jrSzwv0GUjUM9K1N9B3If18vhyuEQ0sRL98cgxV4zVQlJOl6HIRTfWTXrGOZGiG5Mh6VD49NY-i-RmVn62Cs8yAwF6ysvlMn0p8VhK4jK2ZURMfn91wD7VQBRmS7AW0TBoDrjoFyELgBTIi8mzQvFPDFdUxcQ05bb4ZkG94M0BtMq-dSw-aii4wvY25F3B6Xu8crZmb0z2BlLAQRZNynMBNGpcDDitisZAKkcbNT26NHCcZMns2C8rjRg__",
+    APP_LOGO:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL0XMPdlaloC2fmM8ZVJtQbto7a79fNIaP-Q&s",
+    WELCOME_IMAGE:"https://cdn.pixabay.com/photo/2022/05/22/13/21/healthy-7213383_1280.jpg",
     APP_STORE_LOGO:"https://cdn.freebiesupply.com/logos/large/2x/download-on-the-app-store-apple-logo-black-and-white.png",
     PLAY_STORE_LOGO:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png",
     FACEBOOK_ICON:"https://img.icons8.com/?size=100&id=118467&format=png&color=000000",

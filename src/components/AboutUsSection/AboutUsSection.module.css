@@ -87,8 +87,9 @@
     text-align: center;
   }
   
-  .stepIcon {
+  .stepIcon img{
     margin: 1rem;
+    width: 120px;
   }
   
   .stepTitle {

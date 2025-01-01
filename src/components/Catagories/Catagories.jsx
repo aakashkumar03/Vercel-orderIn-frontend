@@ -6,7 +6,6 @@ const Catagories=({data,handleAddToCart})=> {
   
   return (
     <div className={styles.itemContainer}>
-      <h2>Cold Drinks</h2>
       <div className={styles.itemFlex}>
         {data?.map((item) => (
           <div className={styles.itemCard} key={item._id}>

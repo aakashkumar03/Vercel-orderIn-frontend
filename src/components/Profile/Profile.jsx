@@ -107,7 +107,7 @@ const Profile=({profileData={}})=> {
       <div className={styles.profileContent}>
         <div className={styles.profileHeaderLeft}>
           <img 
-            src="https://s3-alpha-sig.figma.com/img/5e4a/3170/267a651a652fb2ee7a3f288490b02114?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VWoveJIPjucn6UKqySe7E~9uvOVzwQG96RR1vxLOcMccgmLZtrf2q1bwINxGkAOjHkO7FgWj1i~0e6rjbfP3ShnAT8I7BVIcFvyq149BlNLrmgv6ABaN70IeDr1rLiGEvPsEugjThaRfNo366HiMJ9fE--BdlzvX0hnquvxqcyq8Umw217CF4ZV-QT17N36rO64aqZEY40Fym1rZrZSUbZp~PvrajdtDrerA-5GXYkMgwiD~V3EqJZzTrCEddvQ7nK17jeLsUXEYKP24jRXi-9eCHVFOAMief1XjWXDgr8BA3jQ2PnNyPJJ7NQ-RGwXmBcsYLXLYq1IaXkgM~vPGsQ__" 
+            src="https://img.icons8.com/?size=100&id=23265&format=png&color=000000" 
             alt="Profile" 
             className={styles.profileImage} 
           />

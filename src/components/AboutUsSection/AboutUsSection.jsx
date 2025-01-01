@@ -17,17 +17,17 @@ export default function AboutUsSection() {
     {
       title: 'Place an Order!',
       description: 'Place order through our website or Mobile app',
-      icon: 'https://s3-alpha-sig.figma.com/img/9e86/106a/631393e760f085d14c048d525e3ef56e?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YBn4DGvkHII3NKPksznlUhjIYZitSBM5PM7NyCeHvUeHWiZ6t-fdt1Q4DDktCvUievWXrMToB2r0vENFqC62CLOdnvZjfCWBhk41-8BWN0VDY7QK-yDQXHcbVctpPcI568fGxN0GAl2aGdQusbLvzOWM4FE56WbUAfHd5v68DMFd~pCWvRN0~n8Xo1p3efxSoB4LCoZ5MzVilpALoOCEBdZRiXdm67DFv8zLpuWzXZ4aMx1B~trDfGFzoQgArDUKNP4LzZ8VXaTiAHAu5IZkuipQOylmKFfz~ey8aVaW6KghzFyNXOlXR3ghlO5A6Z5qhCA1ueZmsKopxNevhSlvoA__'
+      icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2srcXLrO4w7v-jzfb4qdIHjsrgFj7Y0041A&s'
     },
     {
       title: 'Track Progress',
       description: 'Your can track your order status with delivery time',
-      icon: 'https://s3-alpha-sig.figma.com/img/84b2/691f/8d3c41392c27f8ba967b28c003b6511d?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IaDIg3prWyrgpJL7yMF1J~dtonfjtHiIrXU8-8Rqnay0eELUnGBzDPnSW6wDgXe6HfprBp7fZs4nBUUXshziNPW1RV18RJemW709QSQelkVK1F2DcHsgRSKq6A159ISSmOI5C5Y2mDgSXqqZmRLnbpgFaMtCXPOUEmIOsjGvl4NuOQn-2bE-pdeee21LDU1d8R8syQUNkkGwxtBObsHnVNeG3pTzxLFEIQtQ4U-CNE4ACdB-1khT~g45HksKwpfwlVfMext8SZdZCdZTKSD2LXWqg6ITgRnfJqjUa-OAtiJEDMl2LwHMrFeebB31I~UIp4ediiMmls1MnbaltKOH6g__'
+      icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRct7E96ENYn4LXVror8xBuEmbZgw0gpmkvtA&s'
     },
     {
       title: 'Get your Order!',
       description: 'Receive your order at a lighting fast speed!',
-      icon: 'https://s3-alpha-sig.figma.com/img/80e6/0b66/ab934ae45238834b62ee67cff03882f6?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LxJcmlJVRdpfnW2i5IPKYJlQAJHeNL6U~sGnh7F4LEiH~cUwd4QhmtWdteImO-DKRPi0TOQPSl4UNXUWy4eSRLD0KZKAFOouLdgKH4EphoNEYE7jLfb~2PyTduuirnUZ7u98PYgHPEpp0FItsQUwyAVk6FJdWQN~GsShmnPUL9KjRa12xMI8X3P0a14Wi1WD5S6O2fzYX-dCq~qtbVPfk-rGo3dqaY~rA1AGcEuaKp9EXqaouX20nTwxq28~untygCwB6Oi17clV7A9BAYcDMUQD1lp~vMC-TMwR-tsegpP1Ios2lj8Q3xTWNYB~eAEMtBVLKXmrXkbZg9iYOtqObA__'
+      icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQu8IQF2ycdNvSjSzLIVIsNPuNm71M8j5qHQ&s'
     }
   ];
 

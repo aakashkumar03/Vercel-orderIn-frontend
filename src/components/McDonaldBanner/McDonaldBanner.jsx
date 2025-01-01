@@ -26,7 +26,7 @@ const McDonaldBanner = () => {
           </div>
           <div className={styles.imageContainer}>
             <img
-              src="https://s3-alpha-sig.figma.com/img/408d/a7d6/40abc99b6edf6290110ecf4a706ecaa8?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SAoyt3EYkb1onpgNRT6Px~c-pB1btbZZv2s-mg5yjCAY17V4IycJCy~dPuQO7v~A5fxsO9MWqI9AZ6ePjHw90ooC3nSoEgc-eSaAgeJajlrCSwbbF53m8fq3kMChYmJTGrgiusb97KgOkk8OAp8nDI5iMEErV7Ildwd59zDTnV1sKXM8XHbt2HFJiGPayIM5XbelyvCp9q54z60ZY2ry5ex4WkO7vCIstUCW-L~gtpn14ztlIgg0CvN6buuS62~OZ4oozo0Zk8eg9WaWJaHmAABBVbf8BXspFTJ9lAN-pwBdVsvC0iMPodFth7o5jFaLigt0C2j7Hd-djdx2w7Pxfg__" // Replace this URL
+              src="https://curlytales.com/wp-content/uploads/2021/05/e6de389d2316b5ac08fc04c2a96ac6d7_-united-states-texas-tarrant-county-north-richland-hills-northeast-loop-820-6401-mcdonalds-817-656-2862-1.jpg" 
               alt="McDonald's Meal"
             />
           </div>
