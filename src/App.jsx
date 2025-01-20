@@ -2,6 +2,7 @@ import './App.css'
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import 'leaflet/dist/leaflet.css';
+import { Toaster } from "react-hot-toast";
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import ProfilePage from './pages/ProfilePage'
@@ -21,19 +22,21 @@ function App() {
   const [selectedAddress, setSelectedAddress] = useState({});
 
   return (
-    <BrowserRouter basename="/app">
-      <Routing 
-        showPayment={showPayment}
-        setShowPayment={setShowPayment}
-        showAddressList={showAddressList}
-        setShowAddressList={setShowAddressList}
-        total={total}
-        setTotal={setTotal}
-        selectedAddress={selectedAddress}
-        setSelectedAddress={setSelectedAddress}
-      />
-    </BrowserRouter>
-  
+    <>
+      <BrowserRouter basename="/app">
+        <Routing 
+          showPayment={showPayment}
+          setShowPayment={setShowPayment}
+          showAddressList={showAddressList}
+          setShowAddressList={setShowAddressList}
+          total={total}
+          setTotal={setTotal}
+          selectedAddress={selectedAddress}
+          setSelectedAddress={setSelectedAddress}
+        />
+      </BrowserRouter>
+      <Toaster />
+    </>
   )
 }
 

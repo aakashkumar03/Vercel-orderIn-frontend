@@ -3,6 +3,7 @@ import { Link,useNavigate } from "react-router-dom";
 import constants from '../../utils/constants';
 import styles from './LoginForm.module.css';
 import apiCall from '../../utils/API'
+import toast from 'react-hot-toast'
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
@@ -25,8 +26,15 @@ const LoginForm = () => {
 
       setEmail('');
       setPassword('');
+      if(response.token){
+        localStorage.setItem('token',response.token)
+      }else{
+        return toast.error("Invalid user credentials");
+      }
+      toast.success("User login successfully");
       navigate('/home')
     } catch (err) {
+      toast.error("Invalid user credentials");
       console.log(err);
     }
   };
@@ -54,7 +62,7 @@ const LoginForm = () => {
           <label htmlFor="">Password</label><br />
           <input
             type="password"
-            placeholder="At least 8 characters"
+            placeholder="Enter your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required

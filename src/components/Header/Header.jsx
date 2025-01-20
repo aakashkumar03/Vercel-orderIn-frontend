@@ -2,6 +2,7 @@ import  { useState } from 'react';
 import { useNavigate ,Link} from 'react-router-dom';
 import styles from './Header.module.css';
 import constants from '../../utils/constants';
+import toast from 'react-hot-toast'
 
 export default function Header({setShowCart ,totalCartItems}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,10 +10,16 @@ export default function Header({setShowCart ,totalCartItems}) {
   const handleProfile=()=>{
     navigate('/profile')
   }
-  
+  const handleLogout=()=>{
+    toast.success("User logout successfully");
+    localStorage.removeItem('token')
+    navigate('/login')
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.topBar}>
+      <button onClick={handleLogout}>Logout</button>
         <div className={styles.promo}>
           <span>⭐ Get 5% Off your first order.</span>
           <span className={styles.promoCode}>PROMO: ORDER5</span>
@@ -61,7 +68,7 @@ export default function Header({setShowCart ,totalCartItems}) {
           <a href="#">Special Offers</a>
           <a href="#">Restaurants</a>
           <a href="#">Track Order</a>
-          <button className={styles.mobileLoginBtn}>Login/Signup</button>
+          <Link to='/login'>Logout</Link>
         </div>
       )}
     </header>

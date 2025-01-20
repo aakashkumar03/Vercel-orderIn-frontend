@@ -3,6 +3,7 @@ import { Link,useNavigate } from "react-router-dom";
 import constants from '../../utils/constants';
 import styles from './RegisterForm.module.css'; 
 import apiCall from '../../utils/API'
+import toast from 'react-hot-toast'
 
 const RegisterForm = () => {
   const [email, setEmail] = useState('');
@@ -26,12 +27,17 @@ const RegisterForm = () => {
         }
       )
       
-      // Clear the form
-      setName('');
-      setEmail('');
-      setPassword('');
-      setPhone('');
-      navigate('/login')
+      if(response.status == 200){
+        setName('');
+        setEmail('');
+        setPassword('');
+        setPhone('');
+        navigate('/login')
+        toast.success(response.message);
+      }else if(response.status == 201){
+        toast.error(response.message);
+      }
+      
     } catch (err) {
       console.log(err);
     }
@@ -73,7 +79,7 @@ const RegisterForm = () => {
           <label htmlFor="">Password</label><br />
           <input
             type="password"
-            placeholder="At least 8 characters"
+            placeholder="Enter your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required

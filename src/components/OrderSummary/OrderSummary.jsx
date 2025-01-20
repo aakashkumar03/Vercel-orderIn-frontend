@@ -3,6 +3,7 @@ import styles from './OrderSummary.module.css';
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import apiCall from '../../utils/API';
+import toast from 'react-hot-toast'
 
 function OrderSummary  ({ items=[], discounts, deliveryFee, total=0, onRemove, increaseQuantity })  {
 
@@ -29,7 +30,7 @@ const navigate = useNavigate();
     const copiedText=`${window.location.origin}/app/shareable/${response?.cartId}`
     console.log("response===>>>>share",copiedText);
     await navigator.clipboard.writeText(copiedText);
-    alert('Link is copied')
+    toast.success("Link Copied successfully");
   }
   const handleCheckout = () => {
     navigate('/checkout', {
